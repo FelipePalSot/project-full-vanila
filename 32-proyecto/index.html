@@ -12,14 +12,53 @@
 <body>
 
     <div class="layout">
-       <header class="layout__header"></header> 
+       <header class="layout__header">
+        <div class="header__logo">
+            <h1 class="logo__text">PROYECTO JS</h1>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="list__item">
+                    <a href="index.html" class="list__link">INICIO</a>
+                </li>
+
+                <li class="list__item">
+                    <a href="reloj.html" class="list__link">RELOJ</a>
+                </li>
+
+                <li class="list__item">
+                    <a href="sobre-mi.html" class="list__link">SOBRE MI</a>
+                </li>
+
+                <li class="list__item">
+                    <a href="contacto.html" class="list__link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+       </header> 
        
-       <section class="layout__slider"></section>
+       <section class="layout__slider">
+            <button class="slider__btn-prev">
+                <i class="slider__icon fa-solid fa-caret-left"></i> 
+            </button>
+       </section>
 
        <main class="layout__articles"></main>
 
         <aside class="layout__aside"></aside>
 
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados a Felipe Palomino &copy;</p>
+        <p class="footer__top">Ir arriba</p>
+    </footer>
+
+    <div class="themes">
+        <div class="theme__green"></div>
+        <div class="theme__red"></div>
+        <div class="theme__blue"></div>
     </div>
     
 </body>
