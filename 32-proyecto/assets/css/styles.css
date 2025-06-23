@@ -1,6 +1,14 @@
 /* *{
     background-color: silver;
 } */
+:root{
+    --bg-layout: white;
+    --color-primary: #1f88c4;
+    --color-text-logo: white;
+    --bg-nav: #333333;
+    --color-link: white
+}
+
 
 html{
     font-size: 10px;
@@ -22,7 +30,7 @@ body{
         "main aside";
     grid-template-columns: 70% 30%;
     max-width: 128rem;
-    background-color: white;
+    background-color: var(--bg-layout);
     padding: 3rem;
     margin: 2rem auto;
 }
@@ -31,6 +39,47 @@ body{
 
 .layout__header{
     grid-area: header;
+    margin-bottom: 2rem;
+}
+
+.header__logo{
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-primary)
+}
+
+.logo__text{
+    color: var(--color-text-logo);
+    font-size: 5rem;
+}
+
+.header__nav{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--bg-nav);
+    padding: 0 2 rem;
+}
+
+.nav__list{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.list__link{
+    height: 100%;
+    color: var(--color-link);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: all 300ms linear;
+}
+
+.list__link:hover{
+    background-color: var(--color-primary);
 }
 
 .layout__slider{
