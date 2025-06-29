@@ -8,6 +8,7 @@
     --color-shadow: #b7b4b4;
     --color-date: #908d8d;
     --color-light: #59b0e2;
+    --color-visited: #052a3f;
 }
 
 html{
@@ -238,6 +239,10 @@ body{
     border-color: var(--color-primary);
 }
 
+.title__span{
+    background-color: var(--color-text-logo);
+}
+
 /*ESTILOS AL PIE DE PAGINA*/
 
 .footer{
@@ -254,5 +259,16 @@ body{
 }
 
 .footer__top{
+    cursor: pointer;
+}
+
+.footer__top:hover,
+.footer__top:active{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.footer__top:visited{
+    color: var(--color-visited);
     cursor: pointer;
 }
